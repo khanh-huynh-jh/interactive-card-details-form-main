@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import 'variables';
+
+
+body{
+    color: $very_dark_violet;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: $font_size;    
+}
+
+.card-section{
+    background-image: url("../images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+}
+
+.form-section{
+    padding: 10rem 20rem;    
+}
+
+.form-label{
+    font-size: $font_size / 1.75;
+    letter-spacing: 2px;
+}
+
+input{           
+    &::placeholder{
+        color: $light_grayis_violet !important;
+    }
+
+    &:focus{        
+        box-shadow: none !important;       
+        border-color: purple !important;         
+    }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.btn{
+    width: 100%;    
+    background-color: $very_dark_violet;
+    border: none;
+    color: $white;
+
+    &:hover{
+        background-color: $very_dark_violet;
+    }
+    
+    &:focus{
+        background-color: $very_dark_violet;        
+    }
+
+}
+
+.invalid-input{
+    color: $white;
+    font-size: $font_size / 1.75;    
+}

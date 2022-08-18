@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+body {
+  color: hsl(278deg, 68%, 11%);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+.card-section {
+  background-image: url("../images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+}
+
+.form-section {
+  padding: 10rem 20rem;
+}
+
+.form-label {
+  font-size: 10.2857142857px;
+  letter-spacing: 2px;
+}
+
+input::-moz-placeholder {
+  color: hsl(270deg, 3%, 87%) !important;
+}
+
+input:-ms-input-placeholder {
+  color: hsl(270deg, 3%, 87%) !important;
+}
+
+input::placeholder {
+  color: hsl(270deg, 3%, 87%) !important;
+}
+input:focus {
+  box-shadow: none !important;
+  border-color: purple !important;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn {
+  width: 100%;
+  background-color: hsl(278deg, 68%, 11%);
+  border: none;
+  color: hsl(0deg, 0%, 100%);
+}
+.btn:hover {
+  background-color: hsl(278deg, 68%, 11%);
+}
+.btn:focus {
+  background-color: hsl(278deg, 68%, 11%);
+}
+
+.invalid-input {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 10.2857142857px;
+}/*# sourceMappingURL=styles.css.map */

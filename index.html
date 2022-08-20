@@ -20,23 +20,28 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-4 card-section">
-
+        <div class="container">
+          <img src="./images/bg-card-front.png">
+        </div>
+        <div class="container">
+          <img src="./images/bg-card-back.png">
+        </div>
       </div>
 
       <div class="col-8 form-section">
-        <div class="mb-4">
+        <div class="mb-2">
           <label for="cardholder-name-input" class="form-label">CARDHOLDER NAME</label>          
           <input type="text" class="form-control" id="cardholder-name-input" placeholder="e.g. Jane Appleseed">          
           <p class="invalid-input mt-2" id="invalid-cardholder-name"></p> 
         </div>
 
-        <div class="mb-4">
+        <div class="mb-0">
           <label for="card-number-input" class="form-label">CARD NUMBER</label>
           <input type="text" class="form-control" id="card-number-input" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
           <p class="invalid-input mt-2" id="invalid-card-number"></p>          
         </div>
         
-        <div class="row g-3">
+        <div class="row">
           <div class="col-6">
             <label for="expired-date-input" class="form-label">EXP. DATE (MM/YY)</label>
             <div id="expired-date-input" class="row">
@@ -48,8 +53,7 @@
                 <input type="number" class="form-control" id="year-expired-input" placeholder="YY" maxlength="2">
                 <p class="invalid-input mt-2" id="invalid-year">Invalid value</p>
               </div>
-            </div>
-            
+            </div>            
           </div>          
           <div class="col-6">
             <label for="cvc-input" class="form-label">CVC</label>
@@ -58,8 +62,8 @@
           </div>
         </div>
 
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary mb-5 mt-3 btn-lg">Confirm</button>
+        <div class="text-center px-0">
+          <button type="submit" class="btn btn-primary mb-5 mt-1 btn-lg">Confirm</button>
         </div>
 
       </div>

@@ -9,7 +9,16 @@ defalt_value = new Map([
     ["cvc-input" , "000"],
   ]);
  
-  
+
+for (var i = 0; i < inputs.length; i++){
+    inputs[i].addEventListener("input", function(e){    
+        this.style.setProperty('border-color', 'hsl(270, 3%, 87%)');    
+        document.querySelector(message_id(e.target.id)).style.color = "hsl(0, 0%, 100%)" ;      
+        
+        document.querySelector(interactive_info(this.id)).innerHTML = this.value.toUpperCase();
+    });
+}
+
 document.querySelector('#card-number-input').addEventListener('input', function(){         
 var val = this.value;
 var newval = '';    
@@ -47,19 +56,25 @@ document.querySelector('#cvc-input').addEventListener('input', function(e){
 });
 
 
-submit_btn.addEventListener("click", function(){
+for (var i = 0; i < inputs.length; i++){
+    inputs[i].addEventListener("input", function(e){                      
+        document.querySelector(interactive_info(this.id)).innerHTML = this.value.toUpperCase();
+    });
+}
+
+submit_btn.addEventListener("click", function(){    
     for (var i=0; i < inputs.length; i++){
         if (invalid_length(inputs[i].id, inputs[i].value.length)){
             message = document.querySelector(message_id(inputs[i].id));
             message.innerHTML = "Invalid value"; 
             message.style.color = "hsl(0, 100%, 66%)";
-            inputs[i].style.setProperty('border-color', 'hsl(0, 100%, 66%)');
+            inputs[i].style.setProperty('border-color', 'hsl(0, 100%, 66%)');            
         }
         if (inputs[i].value == ""){
             message = document.querySelector(message_id(inputs[i].id));
             message.innerHTML = "Can't be blank"; 
             message.style.color = "hsl(0, 100%, 66%)";
-            inputs[i].style.setProperty('border-color', 'hsl(0, 100%, 66%)');
+            inputs[i].style.setProperty('border-color', 'hsl(0, 100%, 66%)');            
         }        
     }    
     
@@ -67,19 +82,11 @@ submit_btn.addEventListener("click", function(){
         message = document.querySelector(message_id('card-number-input'));
         message.innerHTML = "Wrong format, numbers only";
         message.style.color = "hsl(0, 100%, 66%)";
-        document.querySelector("#card-number-input").style.setProperty('border-color', 'hsl(0, 100%, 66%)');
-    }   
+        document.querySelector("#card-number-input").style.setProperty('border-color', 'hsl(0, 100%, 66%)');        
+    }  
 });
 
-for (var i = 0; i < inputs.length; i++){
-    inputs[i].addEventListener("input", function(e){    
-        this.style.setProperty('border-color', 'hsl(270, 3%, 87%)');    
-        document.querySelector(message_id(e.target.id)).style.color = "hsl(0, 0%, 100%)" ;      
-        
-        document.querySelector(interactive_info(this.id)).innerHTML = this.value.toUpperCase();
-    });
-    
-}
+
 
 document.querySelector('body').addEventListener('click', function(){
     for (var i = 0; i < inputs.length; i++){
@@ -116,13 +123,13 @@ function invalid_character(c){
     return false
 }
 
-function message_invalid_value(id, data, element, value = ''){
+function message_invalid_value(id, data, element, value = ''){    
     if (id == 'month-expired-input'){
         if ((value > 12) || (value.length == 2 && value == 0) || invalid_character(data)){
-            message = document.querySelector(message_id(id))
+            message = document.querySelector(message_id(id));
             message.innerHTML = "Invalid value";
             message.style.color = "hsl(0, 100%, 66%)";
-            element.value = value.slice(0, -1);
+            element.value = value.slice(0, -1);            
         }
     }
     else{

@@ -105,4 +105,8 @@ body {
 }
 .btn:focus {
   background-color: hsl(278deg, 68%, 11%);
+}
+
+.valid-form {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */

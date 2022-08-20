@@ -1,5 +1,5 @@
 inputs = document.querySelectorAll("input");
-submit_btn = document.querySelector("button");
+submit_btn = document.querySelector("#submit-btn");
 
 defalt_value = new Map([
     ["cardholder-name-input", "JANE APPLESEED"],

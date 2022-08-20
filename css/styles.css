@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+input {
+  border-color: hsl(270deg, 3%, 87%);
+}
 input::-moz-placeholder {
   color: hsl(270deg, 3%, 87%) !important;
 }
@@ -87,7 +90,7 @@ body {
 }
 
 .form-label {
-  font-size: 10.2857142857px;
+  font-size: 10.8px;
   letter-spacing: 2px;
 }
 

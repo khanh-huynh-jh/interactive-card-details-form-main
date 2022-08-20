@@ -1,4 +1,5 @@
-input{           
+input{     
+    border-color: $light_grayis_violet;      
     &::placeholder{
         color: $light_grayis_violet !important;
     }

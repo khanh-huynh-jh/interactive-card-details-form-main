@@ -62,19 +62,23 @@ for (var i = 0; i < inputs.length; i++){
     });
 }
 
-submit_btn.addEventListener("click", function(){    
+submit_btn.addEventListener("click", function(){   
+    var valid_answer = true;
+    
     for (var i=0; i < inputs.length; i++){
         if (invalid_length(inputs[i].id, inputs[i].value.length)){
             message = document.querySelector(message_id(inputs[i].id));
             message.innerHTML = "Invalid value"; 
             message.style.color = "hsl(0, 100%, 66%)";
-            inputs[i].style.setProperty('border-color', 'hsl(0, 100%, 66%)');            
+            inputs[i].style.setProperty('border-color', 'hsl(0, 100%, 66%)');       
+            valid_answer = false;     
         }
         if (inputs[i].value == ""){
             message = document.querySelector(message_id(inputs[i].id));
             message.innerHTML = "Can't be blank"; 
             message.style.color = "hsl(0, 100%, 66%)";
-            inputs[i].style.setProperty('border-color', 'hsl(0, 100%, 66%)');            
+            inputs[i].style.setProperty('border-color', 'hsl(0, 100%, 66%)');       
+            valid_answer = false;     
         }        
     }    
     
@@ -83,7 +87,11 @@ submit_btn.addEventListener("click", function(){
         message.innerHTML = "Wrong format, numbers only";
         message.style.color = "hsl(0, 100%, 66%)";
         document.querySelector("#card-number-input").style.setProperty('border-color', 'hsl(0, 100%, 66%)');        
+        valid_answer = false;
     }  
+    if (valid_answer){
+        document.querySelector(".form-section").innerHTML = document.querySelector(".success").innerHTML;        
+    }
 });
 
 
@@ -185,5 +193,4 @@ function interactive_info(input_id){
             return ".back-card p";
       }
 }
-
 

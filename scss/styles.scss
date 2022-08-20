@@ -2,11 +2,12 @@
 @import 'variables';
 @import 'input';
 @import 'card';
+@import 'attribution';
 
 body{
     color: $very_dark_violet;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: $font_size;    
+    font-size: $font_size;        
 }
 
 .card-section{
@@ -43,8 +44,6 @@ body{
 
 }
 
-.valid-form{
-    display: none;    
+.success{
+    display: none;
 }
-
-    

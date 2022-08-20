@@ -71,6 +71,15 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   bottom: 5.95rem;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
 body {
   color: hsl(278deg, 68%, 11%);
   font-family: "Space Grotesk", sans-serif;
@@ -107,6 +116,6 @@ body {
   background-color: hsl(278deg, 68%, 11%);
 }
 
-.valid-form {
+.success {
   display: none;
 }/*# sourceMappingURL=styles.css.map */

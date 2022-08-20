@@ -1,6 +1,52 @@
 inputs = document.querySelectorAll("input");
 submit_btn = document.querySelector("button");
 
+defalt_value = new Map([
+    ["cardholder-name-input", "JANE APPLESEED"],
+    ["card-number-input", "0000 0000 0000 0000"],
+    ["month-expired-input" , "00"],
+    ["year-expired-input" , "00"],
+    ["cvc-input" , "000"],
+  ]);
+ 
+  
+document.querySelector('#card-number-input').addEventListener('input', function(){         
+var val = this.value;
+var newval = '';    
+val = val.replace(/\s/g, '');    
+for(var i = 0; i < val.length; i++) {        
+    if(i%4 == 0 && i > 0) newval = newval.concat(' ');        
+    newval = newval.concat(val[i]);
+}    
+this.value = newval;
+    
+});
+
+document.querySelector('#year-expired-input').addEventListener('input', function(e){              
+    var val = this.value;
+    if (val.length >= 2){
+        this.value = val.slice(0,2);
+    }    
+    message_invalid_value(this.id, e.data, this, this.value); 
+});
+
+document.querySelector('#month-expired-input').addEventListener('input', function(e){            
+    var val = this.value;
+    if (val.length >= 2){
+        this.value = val.slice(0,2);
+    }     
+    message_invalid_value(this.id, e.data, this, this.value);             
+});
+
+document.querySelector('#cvc-input').addEventListener('input', function(e){         
+    var val = this.value;
+    if (val.length >= 3){
+        this.value = val.slice(0,3);
+    }
+    message_invalid_value(this.id, e.data, this, this.value);    
+});
+
+
 submit_btn.addEventListener("click", function(){
     for (var i=0; i < inputs.length; i++){
         if (invalid_length(inputs[i].id, inputs[i].value.length)){
@@ -28,46 +74,21 @@ submit_btn.addEventListener("click", function(){
 for (var i = 0; i < inputs.length; i++){
     inputs[i].addEventListener("input", function(e){    
         this.style.setProperty('border-color', 'hsl(270, 3%, 87%)');    
-        document.querySelector(message_id(e.target.id)).style.color = "hsl(0, 0%, 100%)" ;                
+        document.querySelector(message_id(e.target.id)).style.color = "hsl(0, 0%, 100%)" ;      
+        
+        document.querySelector(interactive_info(this.id)).innerHTML = this.value.toUpperCase();
     });
+    
 }
 
-document.querySelector('#card-number-input').addEventListener('input', function(){         
-    var val = this.value;
-    var newval = '';    
-    val = val.replace(/\s/g, '');    
-    for(var i = 0; i < val.length; i++) {        
-        if(i%4 == 0 && i > 0) newval = newval.concat(' ');        
-        newval = newval.concat(val[i]);
-    }    
-    this.value = newval;
-
-    
-});
-
-document.querySelector('#year-expired-input').addEventListener('input', function(e){              
-    var val = this.value;
-    if (val.length >= 2){
-        this.value = val.slice(0,2);
-    }    
-    message_invalid_value(this.id, e.data, this, this.value); 
-});
-
-document.querySelector('#month-expired-input').addEventListener('input', function(e){            
-    var val = this.value;
-    if (val.length >= 2){
-        this.value = val.slice(0,2);
-    }     
-    message_invalid_value(this.id, e.data, this, this.value);             
-});
-
-document.querySelector('#cvc-input').addEventListener('input', function(e){         
-    var val = this.value;
-    if (val.length >= 3){
-        this.value = val.slice(0,3);
+document.querySelector('body').addEventListener('click', function(){
+    for (var i = 0; i < inputs.length; i++){
+        if (inputs[i].value.length == 0){        
+            document.querySelector(interactive_info(inputs[i].id)).innerHTML = defalt_value.get(inputs[i].id);
+        }
     }
-    message_invalid_value(this.id, e.data, this, this.value);    
 });
+
 
 
 function message_id(input_id){
@@ -143,5 +164,19 @@ function invalid_length(id, length){
       }
 }
 
+function interactive_info(input_id){
+    switch(input_id) {
+        case "cardholder-name-input":
+            return ".cardholder-name";            
+        case "card-number-input":
+            return ".card-number";            
+        case "month-expired-input":
+            return ".month-exp";            
+        case "year-expired-input":
+            return ".year-exp";            
+        default:
+            return ".back-card p";
+      }
+}
 
 

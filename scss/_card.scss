@@ -1,3 +1,4 @@
+$frontcard-bottom : 0.45rem;
 
 .front-card{
     position: relative;  
@@ -6,9 +7,11 @@
     letter-spacing: 2px;
     top: re-scale(8rem);
     left: re-scale(9.5rem);
+    min-width: 30vw;
 
     & img{
         max-width: 100%;
+        min-width: 100%;
     }
 
     & .card-number{
@@ -22,18 +25,19 @@
 
     & .cardholder-name{        
         position: absolute;
-        bottom: re-scale(0.5rem);
+        bottom: re-scale($frontcard-bottom);
         left: re-scale(3.5rem);
     }
 
     & .exp-date{
         position: absolute;
-        bottom: re-scale(0.5rem);
-        right: soft-re-scale(4.5rem);
+        bottom: re-scale($frontcard-bottom);
+        right: re-scale(4.5rem);
     }
 
     & .card-logo{
         max-width: 20%;
+        min-width: 20%;
         position: absolute;
         top: re-scale(1rem);
         left: re-scale(3.5rem);
@@ -43,19 +47,21 @@
 .back-card{
     position: relative;
     color: $white;
-    font-size: re-scale($font_size * 0.75);
+    font-size: re-scale($font_size * 0.8);
     letter-spacing: 2px;
     top: re-scale(10rem);
     left: re-scale(15rem);
+    min-width: 30vw;
 
     & p{
         position: absolute;
-        right: re-scale(4.5rem);
-        bottom: re-scale(5.95rem);
+        right: re-scale(5rem);                          
+       
     }
 
     & img{
-        max-width: 100%;
+        max-width: 100%;        
+        min-width: 100%;
     }
 }
 

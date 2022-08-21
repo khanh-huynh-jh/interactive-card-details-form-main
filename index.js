@@ -111,7 +111,7 @@ window.addEventListener('resize', resize_content);
 function resize_content(){
     if (screen.width > 820){
         document.documentElement.style.setProperty("--scale", (window.innerWidth/1536));
-        console.log(document.documentElement.style.getPropertyValue("--scale"));
+        // console.log(document.documentElement.style.getPropertyValue("--scale"));
     }
 }
 

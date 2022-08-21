@@ -32,9 +32,11 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   letter-spacing: 2px;
   top: calc(8rem * var(--scale));
   left: calc(9.5rem * var(--scale));
+  min-width: 30vw;
 }
 .front-card img {
   max-width: 100%;
+  min-width: 100%;
 }
 .front-card .card-number {
   font-size: calc(27px * var(--scale));
@@ -46,16 +48,17 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 .front-card .cardholder-name {
   position: absolute;
-  bottom: calc(0.5rem * var(--scale));
+  bottom: calc(0.45rem * var(--scale));
   left: calc(3.5rem * var(--scale));
 }
 .front-card .exp-date {
   position: absolute;
-  bottom: calc(0.5rem * var(--scale));
+  bottom: calc(0.45rem * var(--scale));
   right: calc(4.5rem * var(--scale));
 }
 .front-card .card-logo {
   max-width: 20%;
+  min-width: 20%;
   position: absolute;
   top: calc(1rem * var(--scale));
   left: calc(3.5rem * var(--scale));
@@ -64,18 +67,19 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 .back-card {
   position: relative;
   color: hsl(0deg, 0%, 100%);
-  font-size: calc(13.5px * var(--scale));
+  font-size: calc(14.4px * var(--scale));
   letter-spacing: 2px;
   top: calc(10rem * var(--scale));
   left: calc(15rem * var(--scale));
+  min-width: 30vw;
 }
 .back-card p {
   position: absolute;
-  right: calc(4.5rem * var(--scale));
-  bottom: calc(5.95rem * var(--scale));
+  right: calc(5rem * var(--scale));
 }
 .back-card img {
   max-width: 100%;
+  min-width: 100%;
 }
 
 @media (max-width: 390px) {

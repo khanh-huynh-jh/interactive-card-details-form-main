@@ -13,19 +13,13 @@ $small_screen: 390px;
     @return calc($base * var(--scale));    
 }
 
-@function soft-re-scale($base){        
-    @if var(--scale){
-        @return calc($base * var(--scale));
-    }
-    @else{
-        @return calc($base * var(--scale) * 0.75);
-    }    
-}
+// @function soft-re-scale($base) {
+//     $return-value : calc($base * var(--scale) * 0.75);
+//     $scale : var(--scale);
+//     @if ($scale == 1) {
+//         $return-value : calc($base * var(--scale));        
+//     }    
+//     @return $return-value;
+// }
 
-@function hard-re-scale($base){
-    $intensity : 1.1;    
-    @if var(--scale) == 1{
-        $intensity : 1;
-    }
-    @return calc($base * var(--scale) * $intensity);
-}
+

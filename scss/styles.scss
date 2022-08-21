@@ -3,6 +3,7 @@
 @import 'input';
 @import 'card';
 @import 'attribution';
+@import 'success';
 
 body{
     color: $very_dark_violet;
@@ -15,12 +16,27 @@ body{
     background-repeat: no-repeat;
 }
 
+@media (max-width: $small_screen){
+    .card-section{
+        background-image: url("../images/bg-main-mobile.png");  
+        height: 35vh;              
+    }    
+}
+
 .form-section{    
     padding-left: 22rem;
     padding-right: 18rem;
     margin-top: 25vh;    
     height: 100vh;    
 
+}
+
+@media (max-width: $small_screen){
+    .form-section{    
+        padding: 0 1rem;           
+        height: 75vh;    
+        margin-top: 6rem;
+    }   
 }
 
 .form-label{
@@ -44,14 +60,3 @@ body{
 
 }
 
-.success{
-    display: none;
-}
-
-.thanks{
-    font-size: $font_size * 1.75;
-}
-
-.inform{
-    color: $dark_grayish_violet;
-}

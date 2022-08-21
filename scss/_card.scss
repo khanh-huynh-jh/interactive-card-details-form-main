@@ -49,4 +49,59 @@
     }
 }
 
+@media (max-width: $small_screen){
+    $frontcard-left: 1.75rem;
+    $frontcard-bottom: 0.25rem;
+    .front-card{    
+        z-index: 1;                
+        font-size: $font_size *0.5;               
+        left: 0;
+        top: 8rem;   
+        
+        & img{
+            height: 22vh;
+        }
+
+        & .card-number{
+            font-size: $font_size;                    
+            bottom: 2.75rem;
+            left: $frontcard-left;
+            padding: 0;
+            margin: 0;
+        }
+    
+        & .cardholder-name{                    
+            bottom: $frontcard-bottom;
+            left: $frontcard-left;
+        }
+    
+        & .exp-date{            
+            bottom: $frontcard-bottom;
+            right: 5.35rem;
+        }
+    
+        & .card-logo{            
+            top: 1rem;
+            left: $frontcard-left;
+            height: 4vh;
+        }
+    }
+    
+    .back-card{        
+        font-size: $font_size * 0.5;              
+        top: -7rem;       
+        left: 4rem;     
+        position: relative;
+        
+        & img{
+            height: 22vh;
+        }
+
+        & p{
+            position: absolute;
+            right: 6.5rem;
+            bottom: 3.25rem;
+        }
+    }  
+}
     

@@ -2,6 +2,8 @@
 @import 'variables';
 @import 'input';
 @import 'card';
+@import 'card_small';
+@import 'card_medium';
 @import 'attribution';
 @import 'success';
 
@@ -28,6 +30,14 @@ body{
     }    
 }
 
+@media (max-width: $medium_screen) and (min-width: $small_screen){
+    .card-section{
+        background-image: url("../images/bg-main-mobile.png");          
+        height: 40vh;   
+        width: 100vw;                   
+    }    
+}
+
 .form-section{    
     padding-left: re-scale(22rem);
     padding-right: re-scale(18rem);
@@ -44,9 +54,19 @@ body{
     }   
 }
 
+@media (max-width: $medium_screen) and (min-width: $small_screen){
+    .form-section{    
+        padding: 0;           
+        height: 75vh;    
+        margin: auto;        
+        margin-top: 10rem;
+        max-width: 60vw;
+    }   
+}
+
 .form-label{
     font-size: $font_size * 0.6;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;    
 }
 
 .btn{

@@ -82,7 +82,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   min-width: 100%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .front-card {
     min-width: 80vw;
     max-width: 80vw;
@@ -124,6 +124,48 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     right: calc(3rem * var(--scale));
   }
 }
+@media (max-width: 830px) and (min-width: 420px) {
+  .front-card {
+    min-width: 65vw;
+    max-width: 65vw;
+    z-index: 1;
+    font-size: 15.3px;
+    left: 3rem;
+    margin: 0;
+    top: 17rem;
+  }
+  .front-card .card-number {
+    font-size: 27px;
+    bottom: 5.5rem;
+    left: 3rem;
+    padding: 0;
+    margin: 0;
+  }
+  .front-card .cardholder-name {
+    bottom: 1rem;
+    left: 3rem;
+  }
+  .front-card .exp-date {
+    bottom: 1rem;
+    right: 5.35rem;
+  }
+  .front-card .card-logo {
+    top: 1rem;
+    left: 3rem;
+  }
+  .back-card {
+    font-size: 15.3px;
+    top: -12rem;
+    left: 5rem;
+    position: relative;
+    min-width: 65vw;
+    max-width: 65vw;
+  }
+  .back-card p {
+    position: absolute;
+    right: 5rem;
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -161,10 +203,17 @@ body {
   background-size: 100% 100%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .card-section {
     background-image: url("../images/bg-main-mobile.png");
     height: 35vh;
+  }
+}
+@media (max-width: 830px) and (min-width: 420px) {
+  .card-section {
+    background-image: url("../images/bg-main-mobile.png");
+    height: 40vh;
+    width: 100vw;
   }
 }
 .form-section {
@@ -174,16 +223,25 @@ body {
   height: 100vh;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .form-section {
     padding: 0 1rem;
     height: 75vh;
     margin-top: 6rem;
   }
 }
+@media (max-width: 830px) and (min-width: 420px) {
+  .form-section {
+    padding: 0;
+    height: 75vh;
+    margin: auto;
+    margin-top: 10rem;
+    max-width: 60vw;
+  }
+}
 .form-label {
   font-size: 10.8px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 .btn {

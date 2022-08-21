@@ -1,0 +1,55 @@
+@media (max-width: $medium_screen) and (min-width: $small_screen){
+    $frontcard-left: 3rem;
+    $frontcard-bottom: 1rem;  
+    $min-max-width-card: 65vw;  
+
+    .front-card{    
+        min-width: $min-max-width-card;
+        max-width: $min-max-width-card;
+        z-index: 1;                
+        font-size: $font_size * 0.85;               
+        left: 3rem;
+        margin: 0;
+        top: 17rem;                   
+        
+
+        & .card-number{
+            font-size: $font_size * 1.5;                    
+            bottom: 5.5rem;
+            left: $frontcard-left;
+            padding: 0;
+            margin: 0;
+        }
+    
+        & .cardholder-name{                    
+            bottom: $frontcard-bottom;
+            left: $frontcard-left;
+        }
+    
+        & .exp-date{            
+            bottom: $frontcard-bottom;
+            right: 5.35rem;
+        }
+    
+        & .card-logo{                       
+            top: 1rem;
+            left: $frontcard-left;            
+        }
+    }
+    
+    .back-card{        
+        font-size: $font_size * 0.85;              
+        top: -12rem;       
+        left: 5rem;     
+        position: relative;
+        min-width: $min-max-width-card;
+        max-width: $min-max-width-card;
+                 
+        
+        & p{
+            position: absolute;
+            right: 5rem;            
+        }
+    }  
+}
+    

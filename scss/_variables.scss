@@ -7,19 +7,12 @@ $error_red: hsl(0, 100%, 66%);
 
 $font_size: 18px;
 
-$small_screen: 400px;
+$small_screen: 420px;
+$medium_screen: 830px;
 
 @function re-scale($base) {
     @return calc($base * var(--scale));    
 }
 
-// @function soft-re-scale($base) {
-//     $return-value : calc($base * var(--scale) * 0.75);
-//     $scale : var(--scale);
-//     @if ($scale == 1) {
-//         $return-value : calc($base * var(--scale));        
-//     }    
-//     @return $return-value;
-// }
 
 

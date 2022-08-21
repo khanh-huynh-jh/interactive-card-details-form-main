@@ -18,11 +18,12 @@ body{
 .card-section{
     background-image: url("../images/bg-main-desktop.png");
     background-repeat: no-repeat;
+    background-size:100% 100%;
 }
 
 @media (max-width: $small_screen){
     .card-section{
-        background-image: url("../images/bg-main-mobile.png");  
+        background-image: url("../images/bg-main-mobile.png");          
         height: 35vh;              
     }    
 }

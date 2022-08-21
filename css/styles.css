@@ -28,47 +28,54 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 .front-card {
   position: relative;
   color: hsl(0deg, 0%, 100%);
-  font-size: 13.5px;
+  font-size: calc(13.5px * var(--scale));
   letter-spacing: 2px;
-  left: 9.5rem;
-  top: 8rem;
+  top: calc(8rem * var(--scale));
+  left: calc(9.5rem * var(--scale));
+}
+.front-card img {
+  max-width: 100%;
 }
 .front-card .card-number {
-  font-size: 27px;
+  font-size: calc(27px * var(--scale));
   position: absolute;
-  bottom: 4.5rem;
-  left: 3.5rem;
+  bottom: calc(4.5rem * var(--scale));
+  left: calc(3.5rem * var(--scale));
   padding: 0;
   margin: 0;
 }
 .front-card .cardholder-name {
   position: absolute;
-  bottom: 0.5rem;
-  left: 3.5rem;
+  bottom: calc(0.5rem * var(--scale));
+  left: calc(3.5rem * var(--scale));
 }
 .front-card .exp-date {
   position: absolute;
-  bottom: 0.5rem;
-  right: 4.5rem;
+  bottom: calc(0.5rem * var(--scale));
+  right: calc(4.5rem * var(--scale));
 }
 .front-card .card-logo {
+  max-width: 20%;
   position: absolute;
-  top: 1rem;
-  left: 3.5rem;
+  top: calc(1rem * var(--scale));
+  left: calc(3.5rem * var(--scale));
 }
 
 .back-card {
   position: relative;
   color: hsl(0deg, 0%, 100%);
-  font-size: 13.5px;
+  font-size: calc(13.5px * var(--scale));
   letter-spacing: 2px;
-  top: 10rem;
-  left: 15rem;
+  top: calc(10rem * var(--scale));
+  left: calc(15rem * var(--scale));
 }
 .back-card p {
   position: absolute;
-  right: 4.5rem;
-  bottom: 5.95rem;
+  right: calc(4.5rem * var(--scale));
+  bottom: calc(5.95rem * var(--scale));
+}
+.back-card img {
+  max-width: 100%;
 }
 
 @media (max-width: 390px) {
@@ -137,6 +144,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   color: hsl(279deg, 6%, 55%);
 }
 
+:root {
+  --scale: 1;
+}
+
 body {
   color: hsl(278deg, 68%, 11%);
   font-family: "Space Grotesk", sans-serif;
@@ -155,9 +166,9 @@ body {
   }
 }
 .form-section {
-  padding-left: 22rem;
-  padding-right: 18rem;
-  margin-top: 25vh;
+  padding-left: calc(22rem * var(--scale));
+  padding-right: calc(18rem * var(--scale));
+  margin-top: calc(25vh * var(--scale));
   height: 100vh;
 }
 

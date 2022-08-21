@@ -104,7 +104,16 @@ document.querySelector('body').addEventListener('click', function(){
     }
 });
 
+window.addEventListener('load', resize_content);
 
+window.addEventListener('resize', resize_content);
+  
+function resize_content(){
+    if (screen.width > 820){
+        document.documentElement.style.setProperty("--scale", (window.innerWidth/1536));
+        console.log(document.documentElement.style.getPropertyValue("--scale"));
+    }
+}
 
 function message_id(input_id){
     switch(input_id) {
@@ -193,4 +202,3 @@ function interactive_info(input_id){
             return ".back-card p";
       }
 }
-

@@ -1,57 +1,67 @@
+
 .front-card{
     position: relative;  
     color: $white;      
-    font-size: $font_size *0.75;    
+    font-size: re-scale($font_size * 0.75);    
     letter-spacing: 2px;
-    left: 9.5rem;
-    top: 8rem;
+    top: re-scale(8rem);
+    left: re-scale(9.5rem);
+
+    & img{
+        max-width: 100%;
+    }
 
     & .card-number{
-        font-size: $font_size * 1.5;        
+        font-size: re-scale($font_size *1.5);        
         position: absolute;
-        bottom: 4.5rem;
-        left: 3.5rem;
+        bottom: re-scale(4.5rem);
+        left: re-scale(3.5rem);
         padding: 0;
         margin: 0;
     }
 
     & .cardholder-name{        
         position: absolute;
-        bottom: 0.5rem;
-        left: 3.5rem;
+        bottom: re-scale(0.5rem);
+        left: re-scale(3.5rem);
     }
 
     & .exp-date{
         position: absolute;
-        bottom: 0.5rem;
-        right: 4.5rem;
+        bottom: re-scale(0.5rem);
+        right: soft-re-scale(4.5rem);
     }
 
     & .card-logo{
+        max-width: 20%;
         position: absolute;
-        top: 1rem;
-        left: 3.5rem;
+        top: re-scale(1rem);
+        left: re-scale(3.5rem);
     }
 }
 
 .back-card{
     position: relative;
     color: $white;
-    font-size: $font_size *0.75;
+    font-size: re-scale($font_size * 0.75);
     letter-spacing: 2px;
-    top: 10rem;
-    left: 15rem;
+    top: re-scale(10rem);
+    left: re-scale(15rem);
 
     & p{
         position: absolute;
-        right: 4.5rem;
-        bottom: 5.95rem;
+        right: re-scale(4.5rem);
+        bottom: re-scale(5.95rem);
+    }
+
+    & img{
+        max-width: 100%;
     }
 }
 
 @media (max-width: $small_screen){
-    $frontcard-left: 1.75rem;
-    $frontcard-bottom: 0.25rem;
+    $frontcard-left-mobile: 1.75rem;
+    $frontcard-bottom_mobile: 0.25rem;
     .front-card{    
         z-index: 1;                
         font-size: $font_size *0.5;               
@@ -65,24 +75,24 @@
         & .card-number{
             font-size: $font_size;                    
             bottom: 2.75rem;
-            left: $frontcard-left;
+            left: $frontcard-left-mobile;
             padding: 0;
             margin: 0;
         }
     
         & .cardholder-name{                    
-            bottom: $frontcard-bottom;
-            left: $frontcard-left;
+            bottom: $frontcard-bottom_mobile;
+            left: $frontcard-left-mobile;
         }
     
         & .exp-date{            
-            bottom: $frontcard-bottom;
+            bottom: $frontcard-bottom_mobile;
             right: 5.35rem;
         }
     
         & .card-logo{            
             top: 1rem;
-            left: $frontcard-left;
+            left: $frontcard-left-mobile;
             height: 4vh;
         }
     }

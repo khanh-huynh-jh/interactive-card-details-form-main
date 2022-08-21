@@ -5,6 +5,10 @@
 @import 'attribution';
 @import 'success';
 
+:root{
+    --scale: 1;
+}
+
 body{
     color: $very_dark_violet;
     font-family: 'Space Grotesk', sans-serif;
@@ -24,9 +28,9 @@ body{
 }
 
 .form-section{    
-    padding-left: 22rem;
-    padding-right: 18rem;
-    margin-top: 25vh;    
+    padding-left: re-scale(22rem);
+    padding-right: re-scale(18rem);
+    margin-top: re-scale(25vh);    
     height: 100vh;    
 
 }

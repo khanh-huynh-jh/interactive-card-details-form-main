@@ -180,6 +180,46 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   color: hsl(279deg, 6%, 55%);
 }
 
+@media (max-height: 575px) {
+  .front-card {
+    max-width: 40vw;
+    z-index: 1;
+    font-size: 9px;
+    left: 20vw;
+    margin: 0;
+    top: 18vh;
+  }
+  .front-card .card-number {
+    font-size: 16.2px;
+    bottom: 2.75rem;
+    left: 1.75rem;
+    padding: 0;
+    margin: 0;
+  }
+  .front-card .cardholder-name {
+    bottom: 0.25rem;
+    left: 1.75rem;
+  }
+  .front-card .exp-date {
+    bottom: 0.25rem;
+    right: 10%;
+  }
+  .front-card .card-logo {
+    top: 1rem;
+    left: 1.75rem;
+  }
+  .back-card {
+    font-size: 9px;
+    top: -30vh;
+    left: 2rem;
+    position: relative;
+    max-width: 40vw;
+  }
+  .back-card p {
+    position: absolute;
+    right: 15%;
+  }
+}
 :root {
   --scale: 1;
 }
@@ -230,6 +270,13 @@ body {
     margin: auto;
     margin-top: 5vh;
     max-width: 60vw;
+  }
+}
+@media (max-height: 575px) {
+  .form-section {
+    padding: 0 1rem;
+    height: auto;
+    margin-top: 25vh;
   }
 }
 .form-label {

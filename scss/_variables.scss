@@ -8,8 +8,7 @@ $error_red: hsl(0, 100%, 66%);
 
 $font_size: 18px;
 
-$small_screen: 420px;
-$medium_screen: 920px;
+$small_height: 575px;
 
 @function re-scale($base) {
     @return calc($base * var(--scale));    

@@ -6,6 +6,7 @@
 @import 'card_medium';
 @import 'attribution';
 @import 'success';
+@import 'card_small_height';
 
 :root{
     --scale: 1;
@@ -61,6 +62,14 @@ body{
         margin: auto;        
         margin-top: 5vh;
         max-width: 60vw;
+    }   
+}
+
+@media (max-height: $small_height){
+    .form-section{            
+        padding: 0 1rem;                   
+        height: auto;    
+        margin-top: 25vh;
     }   
 }
 

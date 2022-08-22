@@ -1,0 +1,50 @@
+@media (max-height: $small_height){
+    $frontcard-left: 1.75rem;
+    $frontcard-bottom: 0.25rem;
+    $width-card: 40vw;    
+    .front-card{    
+        max-width: $width-card;        
+        z-index: 1;                
+        font-size: $font_size *0.5;               
+        left: 20vw;
+        margin: 0;        
+        top: 18vh;                   
+
+        & .card-number{
+            font-size: $font_size*0.9;                    
+            bottom: 2.75rem;
+            left: $frontcard-left;
+            padding: 0;
+            margin: 0;
+        }
+    
+        & .cardholder-name{                    
+            bottom: $frontcard-bottom;
+            left: $frontcard-left;
+        }
+    
+        & .exp-date{            
+            bottom: $frontcard-bottom;
+            right: 10%;
+        }
+    
+        & .card-logo{            
+            top: 1rem;
+            left: $frontcard-left;            
+        }
+    }
+    
+    .back-card{        
+        font-size: $font_size * 0.5;              
+        top: -30vh;       
+        left: 2rem;     
+        position: relative;
+        max-width: $width-card;        
+               
+        & p{
+            position: absolute;
+            right: 15%;            
+        }
+    }  
+}
+    

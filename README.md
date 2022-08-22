@@ -80,9 +80,9 @@ This website responsiveness has not been great yet. It can be improved by changi
 
 ### Useful resources
 
-- [W3School]([https://www.example.com](https://www.w3schools.com/css/css3_variables.asp)) - CSS variables.
-- [Window: load envet]([https://www.example.com](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event))
-- [Window: resize envet]([[https://www.example.com](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event)](https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event)) 
+- [W3School](https://www.w3schools.com/css/css3_variables.asp) - CSS variables.
+- [Window: load envet](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event)
+- [Window: resize envet](https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event) 
 - [Spacing of Credit Card](https://w3programmings.com/how-to-add-letter-spacing-after-every-4-digits-of-credit-card-in-html-using-javascript/)
 
 

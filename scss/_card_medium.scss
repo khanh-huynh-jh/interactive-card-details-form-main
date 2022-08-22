@@ -1,16 +1,15 @@
-@media (max-width: $medium_screen) and (min-width: $small_screen){
+@media (min-width: 576px) and (max-width: 992px){
     $frontcard-left: 9%;
     $frontcard-bottom: 6%;  
-    $width-card: 65vw;  
+    $width-card: 60vw;  
 
     .front-card{            
-        width: $width-card;
+        max-width: $width-card;
         z-index: 1;                
         font-size: 2vw;               
         left: 3rem;
-        margin: 0;
-        top: 60%;                   
-        
+        margin: 0;                      
+        top: 25vh;        
 
         & .card-number{
             font-size: 3.5vw;                    
@@ -41,7 +40,7 @@
         top: -35%;       
         left: 10%;     
         position: relative;
-        width: $width-card;
+        max-width: $width-card;
                  
         
         & p{

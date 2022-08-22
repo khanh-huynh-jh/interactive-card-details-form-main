@@ -1,3 +1,4 @@
+
 $white: hsl(0, 0%, 100%);
 $light_grayis_violet: hsl(270, 3%, 87%);
 $dark_grayish_violet: hsl(279, 6%, 55%);
@@ -13,7 +14,6 @@ $medium_screen: 920px;
 @function re-scale($base) {
     @return calc($base * var(--scale));    
 }
-
 
 
 

@@ -4,18 +4,17 @@ $frontcard-bottom : 0.45rem;
     position: relative;  
     color: $white;      
     font-size: re-scale($font_size * 0.75);    
-    letter-spacing: 2px;
-    top: re-scale(8rem);
-    left: re-scale(9.5rem);
-    min-width: 30vw;
+    letter-spacing: 2px;    
+    top: 16%;
+    left: 30%;
+    max-width: 25vw;
 
     & img{
-        max-width: 100%;
-        min-width: 100%;
+        width: 100%;
     }
 
     & .card-number{
-        font-size: re-scale($font_size *1.5);        
+        font-size: re-scale($font_size * 1.2);        
         position: absolute;
         bottom: re-scale(4.5rem);
         left: re-scale(3.5rem);
@@ -36,8 +35,7 @@ $frontcard-bottom : 0.45rem;
     }
 
     & .card-logo{
-        max-width: 20%;
-        min-width: 20%;
+        width: 18%;
         position: absolute;
         top: re-scale(1rem);
         left: re-scale(3.5rem);
@@ -49,19 +47,17 @@ $frontcard-bottom : 0.45rem;
     color: $white;
     font-size: re-scale($font_size * 0.8);
     letter-spacing: 2px;
-    top: re-scale(10rem);
-    left: re-scale(15rem);
-    min-width: 30vw;
+    top: 20vh;
+    left: 15vw;
+    max-width: 25vw;
 
     & p{
-        position: absolute;
-        right: re-scale(5rem);                          
-       
+        position: absolute;                           
+        right: 15%;       
     }
 
     & img{
-        max-width: 100%;        
-        min-width: 100%;
+        width: 100%;
     }
 }
 

@@ -1,17 +1,17 @@
-@media (max-width: $small_screen){
+@media (max-width: 576px){
     $frontcard-left: 1.75rem;
     $frontcard-bottom: 0.25rem;
-    $width-card: 80vw;
+    $width-card: 75vw;    
     .front-card{    
-        width: $width-card;
+        max-width: $width-card;        
         z-index: 1;                
         font-size: $font_size *0.5;               
         left: 0;
-        margin: 0;
-        top: 20vh;                   
+        margin: 0;        
+        top: 18vh;                   
 
         & .card-number{
-            font-size: $font_size;                    
+            font-size: $font_size*0.9;                    
             bottom: 2.75rem;
             left: $frontcard-left;
             padding: 0;
@@ -39,7 +39,7 @@
         top: -15.5vh;       
         left: 2rem;     
         position: relative;
-        width: $width-card;
+        max-width: $width-card;        
                
         & p{
             position: absolute;

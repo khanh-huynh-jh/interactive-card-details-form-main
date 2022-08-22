@@ -17,5 +17,5 @@ input{
 
 .invalid-input{
     color: $white;
-    font-size: $font_size / 1.75;    
+    font-size: calc($font-size / 1.75);    
 }

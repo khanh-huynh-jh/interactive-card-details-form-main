@@ -14,9 +14,6 @@ This is a solution to the [Interactive card details form challenge on Frontend M
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -34,7 +31,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot-destop.jpg)
-![](./screenshot-mobile.jpg)
 
 ### Links
 
@@ -49,6 +45,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- Vanilla Javascript
 - [Bootstrap v5.2](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
 

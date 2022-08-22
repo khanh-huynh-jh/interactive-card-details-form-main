@@ -76,7 +76,7 @@ document.documentElement.style.setProperty("--scale", (window.innerWidth/1536));
 
 ### Continued development
 
-This website responsiveness has not been great yet. It can be improved by changing the layout of html. Through this project I figure out that `html` layout also play a huge role when it come to responsiveness. In future project, I should better spend more time on deciding with `html` is best.
+This website responsiveness has not been great yet. It can be improved by changing the layout of html. Through this project I figure out that `html` layout also play a huge role when it come to responsiveness. In future project, I should better spend more time on deciding with `html` layout is best.
 
 ### Useful resources
 

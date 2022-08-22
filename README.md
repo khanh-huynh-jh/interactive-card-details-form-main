@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://github.com/hnvkhanh/interactive-card-details-form-main)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/interactive-card-details-bootstrap-v52-scss-NOQJWBHZXM)
 - Live Site URL: [here](https://hnvkhanh.github.io/interactive-card-details-form-main/)
 
 ## My process

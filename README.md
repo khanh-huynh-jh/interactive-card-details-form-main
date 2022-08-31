@@ -44,7 +44,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Vanilla Javascript
 - [Bootstrap v5.2](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 

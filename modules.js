@@ -67,8 +67,8 @@ function validate_length(id, length) {
 
 function display_default_value() {
     for (let i = 0; i < input_elements_array.length; i++) {
-        if (input_elements_array[i].value.length == 0) {
-            let interactive_info_element = document.querySelector(INTERACTIVE_DISPLAY[input_elements_array[i].id])
+        if (input_elements_array[i].value.length === 0) {
+            let interactive_info_element = document.querySelector(INTERACTIVE_DISPLAY[input_elements_array[i].id]);
             interactive_info_element.innerText = DEFAULT_INPUT_VALUE.get(input_elements_array[i].id);
         }
     }

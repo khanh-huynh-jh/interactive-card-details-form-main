@@ -1,3 +1,9 @@
+const CARD_NUMBER_INPUT_ID = "card-number-input";
+const CVC_INPUT_ID = "cvc-input";
+const MONTH_EXPIRED_INPUT_ID = "month-expired-input";
+const YEAR_EXPIRED_INPUT_ID = "year-expired-input";
+const CARD_HOLDER_NAME_INPUT_ID = "cardholder-name-input";
+
 const DEFAULT_INPUT_VALUE = new Map([
     [CARD_HOLDER_NAME_INPUT_ID, "JANE APPLESEED"],
     [CARD_NUMBER_INPUT_ID, "0000 0000 0000 0000"],
@@ -7,27 +13,21 @@ const DEFAULT_INPUT_VALUE = new Map([
 ]);
 
 const INTERACTIVE_DISPLAY = {
-    CARD_HOLDER_NAME_INPUT_ID: ".cardholder-name",
-    CARD_NUMBER_INPUT_ID: ".card-number",
-    MONTH_EXPIRED_INPUT_ID: ".month-exp",
-    YEAR_EXPIRED_INPUT_ID: ".year-exp",
-    CVC_INPUT_ID: ".back-card p"
+    [`${CARD_HOLDER_NAME_INPUT_ID}`]: ".cardholder-name",
+    [`${CARD_NUMBER_INPUT_ID}`]: ".card-number",
+    [`${MONTH_EXPIRED_INPUT_ID}`]: ".month-exp",
+    [`${YEAR_EXPIRED_INPUT_ID}`]: ".year-exp",
+    [`${CVC_INPUT_ID}`]: ".back-card p"
 
 };
 
 const MESSAGE_ID = {
-    CARD_HOLDER_NAME_INPUT_ID: "#invalid-cardholder-name",
-    CARD_NUMBER_INPUT_ID: "#invalid-card-number",
-    MONTH_EXPIRED_INPUT_ID: "#invalid-month",
-    YEAR_EXPIRED_INPUT_ID: "#invalid-year",
-    CVC_INPUT_ID: "#invalid-cvc"
+    [`${CARD_HOLDER_NAME_INPUT_ID}`]: "#invalid-cardholder-name",
+    [`${CARD_NUMBER_INPUT_ID}`]: "#invalid-card-number",
+    [`${MONTH_EXPIRED_INPUT_ID}`]: "#invalid-month",
+    [`${YEAR_EXPIRED_INPUT_ID}`]: "#invalid-year",
+    [`${CVC_INPUT_ID}`]: "#invalid-cvc"
 }
-
-const CARD_NUMBER_INPUT_ID = "card-number-input";
-const CVC_INPUT_ID = "cvc-input";
-const MONTH_EXPIRED_INPUT_ID = "month-expired-input";
-const YEAR_EXPIRED_INPUT_ID = "year-expired-input";
-const CARD_HOLDER_NAME_INPUT_ID = "cardholder-name-input"
 
 const MAXIMUM_LENGTH_CVC = 3;
 const MAXIMUM_LENGTH_CARD_NUMBER = 19;

@@ -57,7 +57,7 @@ submit_btn.addEventListener("click", function () {
     }
 
     if (answer_is_valid) {
-        document.querySelector(".form-section").innerText = document.querySelector(".success").innerText;
+        document.querySelector(".form-section").innerHTML = document.querySelector(".success").innerHTML;
     }
 });
 
